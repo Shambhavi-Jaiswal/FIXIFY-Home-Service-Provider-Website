@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <!-- Pop-up login form -->
+    <div id="overlay">
+        <div class="login-form">
+            <h2>Welcome to Fixify</h2><br>
+            <form>
+                <label for="area">Select your area:</label>
+                <select id="area" name="area" placeholder="Select your area">
+                    <option value="None">None</option>
+                    <option value="Bade Chauraha">Bade Chauraha</option>
+                    <option value="Jareeb Chowki">Jareeb Chowki</option>
+                    <option value="Vijay Nagar">Vijay Nagar</option>
+                    <option value="Mall Road">Mall Road</option>
+                    <option value="Kakadeo">Kakadeo</option>
+                    <option value="Civil Lines">Civil Lines</option>
+                    <option value="Swaroop Nagar">Swaroop Nagar</option>
+                    <option value="Birhana Road">Birhana Road</option>
+                </select>
+                
+                <label for="requirement">Select your requirement:</label>
+                <select id="requirement" name="requirement" placeholder="Select your requirement">
+                    <option value="None">None</option>
+                    <option value="House Cleaning">House Cleaning</option>
+                    <option value="Plumbing Repairs">Plumbing Repairs</option>
+                    <option value="Electrical Maintenance">Electrical Maintenance</option>
+                    <option value="Appliance Repair">Appliance Repair</option>
+                    <option value="Painting Services">Painting Services</option>
+                    <option value="Pest Control">Pest Control</option>
+                    <option value="Home Renovation">Home Renovation</option>
+                    <option value="Landscaping & Gardening">Landscaping & Gardening</option>
+                </select>
+
+                <button id="searchButton" type="button">Search</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+
+
+
+    <header>
+        <div class="navbar">
+
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search for Services" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="nav-home border">
+                Home
+            </div>
+
+            <div class="nav-about border">
+                About
+            </div>
+
+            <div class="nav-services border">
+                Services
+            </div>
+
+            <div class="nav-contact border">
+                Contact
+            </div>
+
+            <div class="nav-login">
+                Login/Signup
+            </div>
+        </div>
+
+        <div class="hero-section">
+            <div class="hero-msg">
+                <p>Welcome to Fixify! Your one-stop solution for all home service needs. Book now and experience excellence.</p>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="shop-section">
+            <div class="box">
+                <div class="box-content">
+                    <h2>House Cleaning</h2>
+                    <div class="box-img" style="background-image: url('cleaner.png');"></div>
+                    <p>Refresh your living space with our thorough cleaning services, leaving your home sparkling clean.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>Plumbing Repairs</h2>
+                    <div class="box-img" style="background-image: url('home\ service.png');"></div>
+                    <p>From leaky faucets to pipe installations, our expert plumbers have you covered for all plumbing needs.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>Electrical Maintenance</h2>
+                    <div class="box-img" style="background-image: url('electrical.png');"></div>
+                    <p>Ensure safety and functionality with our electrical repair and maintenance services, keeping your home powered up.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>Appliance Repair</h2>
+                    <div class="box-img" style="background-image: url('appliance.png');"></div>
+                    <p>Don't let faulty appliances disrupt your daily routine. Trust our technicians to fix them promptly.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>Painting Services</h2>
+                    <div class="box-img" style="background-image: url('painter.png');"></div>
+                    <p>Transform your space with a fresh coat of paint. Our skilled painters deliver professional results tailored to your preferences.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>Pest Control</h2>
+                    <div class="box-img" style="background-image: url('pest-control.png');"></div>
+                    <p>Say goodbye to unwanted guests! Our pest control services provide effective solutions for a pest-free home.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>Home Renovation</h2>
+                    <div class="box-img" style="background-image: url('renovation.png');"></div>
+                    <p>Ready for a makeover? Let us handle your home renovation projects, from small upgrades to full-scale remodels.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h2>Landscaping & Gardening</h2>
+                    <div class="box-img" style="background-image: url('gardening.png');"></div>
+                    <p>Create your own oasis with our landscaping and gardening services, enhancing your outdoor living space.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-company">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Kanpur, UP</p>
+                <p><i class="fa-solid fa-phone"></i> +91-7668026255</p>
+                <p><i class="fa-solid fa-envelope"></i> contact@fixify.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i> X</a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    </ul>   
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fixify. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Your existing HTML content goes here -->
+
+    <!-- Include your JavaScript file at the end -->
+    <script src="script.js"></script>
+
+
+</body>
+</html>
